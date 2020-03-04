@@ -53,4 +53,8 @@ resource "vsphere_virtual_machine" "vm" {
   extra_config {
     "sched.cpu.latencySensitivity" = "high"
   }
+  
+  provisioner "local-exec" {
+    command = "govc vm.change -vm.uuid=${self.id} -e sched.cpu.latencySensitivity=high"
+  }
 }
