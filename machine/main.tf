@@ -48,4 +48,8 @@ resource "vsphere_virtual_machine" "vm" {
       "guestinfo.ignition.config.data.encoding" = "base64"
     }
   }
+  
+  extra_config {
+    "sched.cpu.latencySensitivity" = "high"
+  }
 }
