@@ -21,6 +21,7 @@ resource "vsphere_virtual_machine" "vm" {
   datastore_id     = "${data.vsphere_datastore.datastore.id}"
   num_cpus         = "${var.num_cpu}"
   memory           = "${var.memory}"
+  memory_reservation = "${var.memory}"
   guest_id         = "${data.vsphere_virtual_machine.template.guest_id}"
   folder           = "${var.folder}"
   enable_disk_uuid = "true"
