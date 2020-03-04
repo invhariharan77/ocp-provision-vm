@@ -30,7 +30,7 @@ vm_template = "rhcos-4.3.0-x86_64-vmware"
 
 // The machine_cidr where IP addresses will be assigned for cluster nodes.
 // Additionally, IPAM will assign IPs based on the network ID. 
-machine_cidr = "192.168.68.0/23"
+machine_cidr = "192.168.68.0/24"
 
 // The number of control plane VMs to create. Default is 3.
 control_plane_count = 3
