@@ -43,6 +43,7 @@ module "bootstrap" {
   machine_cidr     = "${var.machine_cidr}"
   memory           = "8192"
   num_cpu          = "4"
+  mac_address      = "00:50:56:a8:aa:a1"
 }
 
 module "control_plane" {
@@ -64,6 +65,7 @@ module "control_plane" {
   machine_cidr     = "${var.machine_cidr}"
   memory           = "${var.master_memory}"
   num_cpu          = "${var.master_num_cpus}"
+  mac_address      = "00:50:56:a8:aa:b"
 }
 
 module "compute" {
@@ -85,6 +87,7 @@ module "compute" {
   machine_cidr     = "${var.machine_cidr}"
   memory           = "${var.compute_memory}"
   num_cpu          = "${var.compute_num_cpus}"
+  mac_address      = "00:50:56:a8:aa:c"
 }
 
 /*
