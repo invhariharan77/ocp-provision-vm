@@ -26,8 +26,8 @@ vsphere_datacenter = "Datacenter"
 vsphere_datastore = "iscsi"
 
 // Name of the VM template to clone to create VMs for the cluster. The dev cluster has a template named "rhcos-latest".
-// vm_template = "rhcos-4.3.0-x86_64-vmware"
-vm_template = "rhcos-4.2.0-x86_64-vmware1"
+vm_template = "rhcos-4.3.0-x86_64-vmware"
+// vm_template = "rhcos-4.2.0-x86_64-vmware"
 
 // The machine_cidr where IP addresses will be assigned for cluster nodes.
 // Additionally, IPAM will assign IPs based on the network ID. 
