@@ -55,6 +55,6 @@ resource "vsphere_virtual_machine" "vm" {
   }
   
   provisioner "local-exec" {
-    command = "govc vm.change -vm.uuid=${self.id} -e sched.cpu.latencySensitivity=high"
+    command = "govc vm.change -vm.uuid=${self.id} -latency high -mem.reservation ${var.memory}"
   }
 }
