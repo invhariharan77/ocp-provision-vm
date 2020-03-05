@@ -66,3 +66,7 @@ variable "memory" {
 variable "num_cpu" {
   type = "string"
 }
+
+variable "mac_address" {
+  type = "string"
+}
